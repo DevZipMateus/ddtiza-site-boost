@@ -75,15 +75,15 @@ const Footer = () => {
         <div className="border-t border-secondary-foreground/20 pt-8 text-center text-secondary-foreground/70">
           <p>© {currentYear} DDTIZA OESTE. Todos os direitos reservados.</p>
           <p className="text-sm mt-2">CNPJ: 42.178.666/0001-84</p>
-          <div className="mt-4 flex items-center justify-center gap-2 text-sm">
-            <span>Feito por</span>
+          <div className="mt-6 pt-4 border-t border-secondary-foreground/10 flex items-center justify-center gap-2">
+            <span className="text-secondary-foreground/80">Feito por</span>
             <a 
               href="https://egestor.com.br/cadastro.php" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:opacity-80 transition-opacity"
             >
-              <img src={montesiteLogo} alt="Monte Site" className="h-5" />
+              <img src={montesiteLogo} alt="Monte Site" className="h-8" />
             </a>
           </div>
         </div>
