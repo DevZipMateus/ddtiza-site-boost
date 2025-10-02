@@ -9,7 +9,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Logo and Description */}
           <div>
-            <img src={logo} alt="DDTIZA OESTE" className="h-20 w-auto mb-4" />
+            <div className="bg-white p-4 rounded-lg inline-block mb-4">
+              <img src={logo} alt="DDTIZA OESTE" className="h-20 w-auto" />
+            </div>
             <p className="text-secondary-foreground/80 leading-relaxed">
               Controle de pragas profissional com garantia, assistência e preço justo.
             </p>
