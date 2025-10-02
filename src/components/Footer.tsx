@@ -1,4 +1,5 @@
 import logo from "@/assets/logo.png";
+import montesiteLogo from "@/assets/montesite-logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -74,6 +75,17 @@ const Footer = () => {
         <div className="border-t border-secondary-foreground/20 pt-8 text-center text-secondary-foreground/70">
           <p>© {currentYear} DDTIZA OESTE. Todos os direitos reservados.</p>
           <p className="text-sm mt-2">CNPJ: 42.178.666/0001-84</p>
+          <div className="mt-4 flex items-center justify-center gap-2 text-sm">
+            <span>Feito por</span>
+            <a 
+              href="https://montesite.com.br" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:opacity-80 transition-opacity"
+            >
+              <img src={montesiteLogo} alt="Monte Site" className="h-5" />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
