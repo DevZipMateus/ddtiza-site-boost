@@ -1,4 +1,4 @@
-import { MessageCircle } from "lucide-react";
+import whatsappIcon from "@/assets/whatsapp-icon.png";
 
 const WhatsAppButton = () => {
   const whatsappNumber = "5549991858657";
@@ -9,10 +9,10 @@ const WhatsAppButton = () => {
       href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-40 w-14 h-14 bg-primary text-primary-foreground rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow"
+      className="fixed bottom-6 right-6 z-40 w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow hover:scale-110 transition-transform"
       aria-label="Fale conosco no WhatsApp"
     >
-      <MessageCircle className="w-7 h-7" />
+      <img src={whatsappIcon} alt="WhatsApp" className="w-full h-full" />
     </a>
   );
 };
