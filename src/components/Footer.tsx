@@ -78,7 +78,7 @@ const Footer = () => {
           <div className="mt-4 flex items-center justify-center gap-2 text-sm">
             <span>Feito por</span>
             <a 
-              href="https://montesite.com.br" 
+              href="https://egestor.com.br/cadastro.php" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:opacity-80 transition-opacity"
