@@ -28,54 +28,70 @@ const Hero = () => {
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-3xl">
-          <h1 className="font-bebas text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 animate-fade-in tracking-wide">
-            DDTIZA OESTE
-          </h1>
-          <h2 className="text-2xl md:text-3xl text-white/95 mb-8 font-light leading-relaxed">
-            Controle de pragas profissional com garantia, assistência e preço justo desde 2021
-          </h2>
-          
-          {/* Features */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-            <div className="flex items-center gap-3 text-white/95">
-              <Shield className="w-8 h-8 flex-shrink-0" />
-              <span className="text-lg">Garantia e assistência</span>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          {/* Left Column - Text Content */}
+          <div className="max-w-3xl">
+            <h1 className="font-bebas text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 animate-fade-in tracking-wide">
+              DDTIZA OESTE
+            </h1>
+            <h2 className="text-2xl md:text-3xl text-white/95 mb-8 font-light leading-relaxed">
+              Controle de pragas profissional com garantia, assistência e preço justo desde 2021
+            </h2>
+            
+            {/* Features */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+              <div className="flex items-center gap-3 text-white/95">
+                <Shield className="w-8 h-8 flex-shrink-0" />
+                <span className="text-lg">Garantia e assistência</span>
+              </div>
+              <div className="flex items-center gap-3 text-white/95">
+                <Award className="w-8 h-8 flex-shrink-0" />
+                <span className="text-lg">Laudo técnico</span>
+              </div>
+              <div className="flex items-center gap-3 text-white/95">
+                <Clock className="w-8 h-8 flex-shrink-0" />
+                <span className="text-lg">Atendimento rápido</span>
+              </div>
             </div>
-            <div className="flex items-center gap-3 text-white/95">
-              <Award className="w-8 h-8 flex-shrink-0" />
-              <span className="text-lg">Laudo técnico</span>
-            </div>
-            <div className="flex items-center gap-3 text-white/95">
-              <Clock className="w-8 h-8 flex-shrink-0" />
-              <span className="text-lg">Atendimento rápido</span>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button
+                variant="hero"
+                size="lg"
+                onClick={scrollToContact}
+                className="text-lg px-8 py-6 h-auto"
+              >
+                Solicitar orçamento gratuito
+              </Button>
+              <Button
+                variant="hero"
+                size="lg"
+                asChild
+                className="text-lg px-8 py-6 h-auto"
+              >
+                <a
+                  href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  WhatsApp
+                </a>
+              </Button>
             </div>
           </div>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button
-              variant="hero"
-              size="lg"
-              onClick={scrollToContact}
-              className="text-lg px-8 py-6 h-auto"
+          {/* Right Column - Video */}
+          <div className="hidden lg:block">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full h-auto rounded-lg shadow-2xl"
             >
-              Solicitar orçamento gratuito
-            </Button>
-            <Button
-              variant="hero"
-              size="lg"
-              asChild
-              className="text-lg px-8 py-6 h-auto"
-            >
-              <a
-                href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                WhatsApp
-              </a>
-            </Button>
+              <source src="/midia_1.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
       </div>
