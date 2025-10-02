@@ -29,7 +29,7 @@ const Hero = () => {
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl">
-          <h1 className="font-bebas text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in tracking-wide">
+          <h1 className="font-bebas text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 animate-fade-in tracking-wide">
             DDTIZA OESTE
           </h1>
           <h2 className="text-2xl md:text-3xl text-white/95 mb-8 font-light leading-relaxed">
