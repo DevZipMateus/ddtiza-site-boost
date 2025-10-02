@@ -83,7 +83,9 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="hover:opacity-80 transition-opacity"
             >
-              <img src={montesiteLogo} alt="Monte Site" className="h-8" />
+              <div className="bg-white p-2 rounded inline-block">
+                <img src={montesiteLogo} alt="Monte Site" className="h-6" />
+              </div>
             </a>
           </div>
         </div>
